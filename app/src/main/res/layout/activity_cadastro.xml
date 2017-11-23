@@ -76,21 +76,22 @@
                 android:orientation="horizontal">
 
                 <RadioButton
+                    android:id="@+id/rgMasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:text="M"
+                    android:textColor="?android:attr/colorBackground" />
+
+                <RadioButton
                     android:id="@+id/rgFeminino"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:backgroundTint="@color/colorAccent"
                     android:checked="true"
-                    android:text="Femenino"
+                    android:text="F"
                     android:textColor="?android:attr/colorBackground" />
 
-                <RadioButton
-                    android:id="@+id/rgMasculino"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:checked="true"
-                    android:text="Masculino"
-                    android:textColor="?android:attr/colorBackground" />
             </RadioGroup>
 
             <Button
