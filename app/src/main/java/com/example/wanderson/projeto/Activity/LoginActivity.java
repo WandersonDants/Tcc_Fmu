@@ -33,6 +33,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private EditText edtSenha;
     private TextView edAbreCadastro;
     private Button btnLogar;
+    private TextView edResetSenha;
     private FirebaseAuth autenticacao;
     private Usuarios usuarios;
     private SignInButton btnSignIn;
@@ -46,6 +47,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
 
         edtEmail = (EditText)findViewById(R.id.edEmail);
         edtSenha = (EditText)findViewById(R.id.edSenha);
+        edResetSenha = (TextView)findViewById(R.id.edResetSenha);
         edAbreCadastro = (TextView)findViewById(R.id.tvAbreCadastro);
         btnLogar = (Button) findViewById(R.id.btnLogin);
 
@@ -66,6 +68,13 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 }else{
                     Toast.makeText(LoginActivity.this,"Preencha os campos de e-mail e senha", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+        edResetSenha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this,ResetSenha.class);
+                startActivity(intent);
             }
         });
         edAbreCadastro.setOnClickListener(new View.OnClickListener() {

@@ -25,6 +25,7 @@
         <activity android:name=".Activity.Principal" />
         <activity android:name=".Activity.Cadastro" />
         <activity android:name=".Activity.CalculoRentavel" />
+        <activity android:name=".Activity.ResetSenha"></activity>
     </application>
 
 </manifest>
